@@ -1,0 +1,1208 @@
+Removing previous build folder (--clean)...
+=== Step 1/8: ROM Validation ===
+Selecting manifest for Gambit.rpx...
+Selected manifest: Gambit_v16.manifest
+Detected game version: 16
+=== Step 2/8: Initializing Wii U Resources ===
+Downloading Cemu replacement font: CafeCn.ttf
+Downloading Cemu replacement font: CafeKr.ttf
+Downloading Cemu replacement font: CafeStd.ttf
+Downloading Cemu replacement font: CafeTw.ttf
+Replacement fonts and Wii U folder structure ready.
+=== Step 3/8: SDL2 & glslang Dependencies ===
+Downloading SDL2...
+Downloading glslang...
+Extracting SDL2...
+-- The C compiler identification is GNU 16.2.0
+-- The C compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- The CXX compiler identification is GNU 16.2.0
+-- Found PkgConfig: /usr/bin/pkg-config (found version "3.0.7")
+-- Looking for __GLIBC__
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Looking for __GLIBC__ - found
+-- Performing Test CHECK_CPU_ARCHITECTURE_X86
+-- Detecting CXX compiler ABI info
+-- Performing Test CHECK_CPU_ARCHITECTURE_X86 - Failed
+-- Performing Test CHECK_CPU_ARCHITECTURE_X64
+-- Detecting CXX compiler ABI info - done
+-- Performing Test CHECK_CPU_ARCHITECTURE_X64 - Success
+-- Performing Test CHECK_CPU_ARCHITECTURE_ARM32
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- No build type selected, default to Debug
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CHECK_CPU_ARCHITECTURE_ARM32 - Failed
+-- Performing Test CHECK_CPU_ARCHITECTURE_ARM64
+-- Performing Test CHECK_CPU_ARCHITECTURE_ARM64 - Failed
+-- Performing Test CHECK_CPU_ARCHITECTURE_ARM64EC
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Configuring done (0.4s)
+-- Performing Test CHECK_CPU_ARCHITECTURE_ARM64EC - Failed
+-- Performing Test CHECK_CPU_ARCHITECTURE_LOONGARCH64
+-- Generating done (0.0s)
+-- Build files have been written to: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps-build/glslang-vulkan-build
+-- Performing Test CHECK_CPU_ARCHITECTURE_LOONGARCH64 - Failed
+-- Performing Test HAVE_GCC_WALL
+[1/55] Building CXX object glslang/CMakeFiles/GenericCodeGen.dir/stub.cpp.o
+[2/55] Building CXX object SPIRV/CMakeFiles/SPIRV.dir/__/glslang/stub.cpp.o
+[3/55] Building CXX object glslang/OSDependent/Unix/CMakeFiles/OSDependent.dir/__/__/stub.cpp.o
+[4/55] Building CXX object glslang/CMakeFiles/MachineIndependent.dir/stub.cpp.o
+[5/55] Linking CXX static library SPIRV/libSPIRV.a
+[6/55] Linking CXX static library glslang/libGenericCodeGen.a
+[7/55] Linking CXX static library glslang/OSDependent/Unix/libOSDependent.a
+[8/55] Linking CXX static library glslang/libMachineIndependent.a
+-- Performing Test HAVE_GCC_WALL - Success
+-- Performing Test HAVE_GCC_WUNDEF
+-- Performing Test HAVE_GCC_WUNDEF - Success
+-- Performing Test HAVE_GCC_NO_STRICT_ALIASING
+[9/55] Building CXX object glslang/CMakeFiles/glslang-default-resource-limits.dir/ResourceLimits/resource_limits_c.cpp.o
+-- Performing Test HAVE_GCC_NO_STRICT_ALIASING - Success
+-- Performing Test HAVE_GCC_WDOCUMENTATION
+-- Performing Test HAVE_GCC_WDOCUMENTATION - Failed
+-- Performing Test HAVE_GCC_WDOCUMENTATION_UNKNOWN_COMMAND
+-- Performing Test HAVE_GCC_WDOCUMENTATION_UNKNOWN_COMMAND - Failed
+-- Performing Test HAVE_GCC_COMMENT_BLOCK_COMMANDS
+-- Performing Test HAVE_GCC_COMMENT_BLOCK_COMMANDS - Failed
+-- Performing Test HAVE_CLANG_COMMENT_BLOCK_COMMANDS
+[10/55] Building CXX object glslang/CMakeFiles/glslang-default-resource-limits.dir/ResourceLimits/ResourceLimits.cpp.o
+-- Performing Test HAVE_CLANG_COMMENT_BLOCK_COMMANDS - Failed
+-- Performing Test HAVE_GCC_WDECLARATION_AFTER_STATEMENT
+[11/55] Linking CXX static library glslang/libglslang-default-resource-limits.a
+-- Performing Test HAVE_GCC_WDECLARATION_AFTER_STATEMENT - Success
+-- Performing Test HAVE_GCC_ATOMICS
+-- Performing Test HAVE_GCC_ATOMICS - Success
+-- Performing Test HAVE_GCC_FVISIBILITY
+-- Performing Test HAVE_GCC_FVISIBILITY - Success
+-- Performing Test HAVE_GCC_WSHADOW
+-- Performing Test HAVE_GCC_WSHADOW - Success
+-- Performing Test HAVE_GCC_WUNUSED_LOCAL_TYPEDEFS
+-- Performing Test HAVE_GCC_WUNUSED_LOCAL_TYPEDEFS - Success
+-- Performing Test HAVE_NO_UNDEFINED
+-- Performing Test HAVE_NO_UNDEFINED - Success
+-- Performing Test HAVE_MMX
+-- Performing Test HAVE_MMX - Success
+-- Performing Test HAVE_SSE
+-- Performing Test HAVE_SSE - Success
+-- Performing Test CPU_SUPPORTS_SSE2
+-- Performing Test CPU_SUPPORTS_SSE2 - Success
+-- Performing Test CPU_SUPPORTS_SSE3
+-- Performing Test CPU_SUPPORTS_SSE3 - Success
+-- Looking for immintrin.h
+-- Looking for immintrin.h - found
+-- Performing Test HAVE_ALTIVEC_H_HDR
+-- Performing Test HAVE_ALTIVEC_H_HDR - Failed
+-- Performing Test CPU_SUPPORTS_ALTIVEC
+-- Performing Test CPU_SUPPORTS_ALTIVEC - Failed
+-- Looking for ctype.h
+-- Looking for ctype.h - found
+-- Looking for float.h
+-- Looking for float.h - found
+-- Looking for iconv.h
+-- Looking for iconv.h - found
+-- Looking for inttypes.h
+-- Looking for inttypes.h - found
+-- Looking for limits.h
+-- Looking for limits.h - found
+-- Looking for malloc.h
+-- Looking for malloc.h - found
+-- Looking for math.h
+-- Looking for math.h - found
+-- Looking for memory.h
+-- Looking for memory.h - found
+-- Looking for signal.h
+-- Looking for signal.h - found
+-- Looking for stdarg.h
+-- Looking for stdarg.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stdio.h
+-- Looking for stdio.h - found
+-- Looking for stdlib.h
+-- Looking for stdlib.h - found
+-- Looking for string.h
+-- Looking for string.h - found
+-- Looking for strings.h
+-- Looking for strings.h - found
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for wchar.h
+-- Looking for wchar.h - found
+-- Looking for 7 include files stddef.h, ..., float.h
+-- Looking for 7 include files stddef.h, ..., float.h - found
+-- Looking for M_PI
+-- Looking for M_PI - found
+-- Performing Test HAVE_MPROTECT
+-- Performing Test HAVE_MPROTECT - Success
+-- Looking for strtod
+-- Looking for strtod - found
+-- Looking for malloc
+-- Looking for malloc - found
+-- Looking for calloc
+-- Looking for calloc - found
+-- Looking for realloc
+-- Looking for realloc - found
+-- Looking for free
+[12/55] Building CXX object glslang/CMakeFiles/glslang.dir/cmake_pch.hxx.gch
+-- Looking for free - found
+-- Looking for getenv
+-- Looking for getenv - found
+-- Looking for setenv
+-- Looking for setenv - found
+-- Looking for putenv
+-- Looking for putenv - found
+-- Looking for unsetenv
+-- Looking for unsetenv - found
+-- Looking for bsearch
+-- Looking for bsearch - found
+-- Looking for qsort
+[13/55] Building CXX object glslang/CMakeFiles/glslang.dir/GenericCodeGen/CodeGen.cpp.o
+-- Looking for qsort - found
+-- Looking for abs
+[14/55] Building CXX object glslang/CMakeFiles/glslang.dir/OSDependent/Unix/ossource.cpp.o
+[15/55] Building CXX object glslang/CMakeFiles/glslang.dir/GenericCodeGen/Link.cpp.o
+-- Looking for abs - found
+-- Looking for bcopy
+[16/55] Building CXX object glslang/CMakeFiles/glslang.dir/MachineIndependent/attribute.cpp.o
+-- Looking for bcopy - found
+-- Looking for memset
+[17/55] Building CXX object glslang/CMakeFiles/glslang.dir/MachineIndependent/InfoSink.cpp.o
+-- Looking for memset - found
+-- Looking for memcpy
+[18/55] Building CXX object glslang/CMakeFiles/glslang.dir/CInterface/glslang_c_interface.cpp.o
+[19/55] Building CXX object glslang/CMakeFiles/glslang.dir/MachineIndependent/IntermTraverse.cpp.o
+-- Looking for memcpy - found
+-- Looking for memmove
+[20/55] Building CXX object glslang/CMakeFiles/glslang.dir/MachineIndependent/Constant.cpp.o
+-- Looking for memmove - found
+-- Looking for memcmp
+-- Looking for memcmp - found
+-- Looking for strlen
+-- Looking for strlen - found
+-- Looking for strlcpy
+-- Looking for strlcpy - found
+-- Looking for strlcat
+-- Looking for strlcat - found
+-- Looking for _strrev
+-- Looking for _strrev - not found
+-- Looking for _strupr
+-- Looking for _strupr - not found
+-- Looking for _strlwr
+[21/55] Building CXX object glslang/CMakeFiles/glslang.dir/MachineIndependent/Intermediate.cpp.o
+[22/55] Building CXX object glslang/CMakeFiles/glslang.dir/MachineIndependent/Initialize.cpp.o
+-- Looking for _strlwr - not found
+-- Looking for index
+[23/55] Building CXX object glslang/CMakeFiles/glslang.dir/MachineIndependent/PoolAlloc.cpp.o
+[24/55] Building CXX object glslang/CMakeFiles/glslang.dir/MachineIndependent/RemoveTree.cpp.o
+-- Looking for index - found
+-- Looking for rindex
+-- Looking for rindex - found
+-- Looking for strchr
+[25/55] Building CXX object glslang/CMakeFiles/glslang.dir/MachineIndependent/glslang_tab.cpp.o
+-- Looking for strchr - found
+-- Looking for strrchr
+-- Looking for strrchr - found
+-- Looking for strstr
+-- Looking for strstr - found
+-- Looking for strtok_r
+-- Looking for strtok_r - found
+-- Looking for itoa
+-- Looking for itoa - not found
+-- Looking for _ltoa
+-- Looking for _ltoa - not found
+-- Looking for _uitoa
+-- Looking for _uitoa - not found
+-- Looking for _ultoa
+[26/55] Building CXX object glslang/CMakeFiles/glslang.dir/MachineIndependent/iomapper.cpp.o
+-- Looking for _ultoa - not found
+-- Looking for strtol
+[27/55] Building CXX object glslang/CMakeFiles/glslang.dir/MachineIndependent/limits.cpp.o
+[28/55] Building CXX object glslang/CMakeFiles/glslang.dir/MachineIndependent/Scan.cpp.o
+[29/55] Building CXX object glslang/CMakeFiles/glslang.dir/MachineIndependent/ParseContextBase.cpp.o
+[30/55] Building CXX object glslang/CMakeFiles/glslang.dir/MachineIndependent/SpirvIntrinsics.cpp.o
+-- Looking for strtol - found
+-- Looking for strtoul
+-- Looking for strtoul - found
+-- Looking for _i64toa
+-- Looking for _i64toa - not found
+-- Looking for _ui64toa
+-- Looking for _ui64toa - not found
+-- Looking for strtoll
+-- Looking for strtoll - found
+-- Looking for strtoull
+[31/55] Building CXX object glslang/CMakeFiles/glslang.dir/MachineIndependent/parseConst.cpp.o
+[32/55] Building CXX object glslang/CMakeFiles/glslang.dir/MachineIndependent/SymbolTable.cpp.o
+[33/55] Building CXX object glslang/CMakeFiles/glslang.dir/MachineIndependent/intermOut.cpp.o
+-- Looking for strtoull - found
+-- Looking for atoi
+[34/55] Building CXX object glslang/CMakeFiles/glslang.dir/MachineIndependent/Versions.cpp.o
+-- Looking for atoi - found
+-- Looking for atof
+-- Looking for atof - found
+-- Looking for strcmp
+-- Looking for strcmp - found
+-- Looking for strncmp
+-- Looking for strncmp - found
+-- Looking for _stricmp
+-- Looking for _stricmp - not found
+-- Looking for strcasecmp
+[35/55] Building CXX object glslang/CMakeFiles/glslang.dir/MachineIndependent/preprocessor/PpAtom.cpp.o
+-- Looking for strcasecmp - found
+-- Looking for _strnicmp
+-- Looking for _strnicmp - not found
+-- Looking for strncasecmp
+[36/55] Building CXX object glslang/CMakeFiles/glslang.dir/MachineIndependent/ShaderLang.cpp.o
+[37/55] Building CXX object glslang/CMakeFiles/glslang.dir/MachineIndependent/preprocessor/PpContext.cpp.o
+[38/55] Building CXX object glslang/CMakeFiles/glslang.dir/MachineIndependent/preprocessor/PpScanner.cpp.o
+-- Looking for strncasecmp - found
+-- Looking for strcasestr
+-- Looking for strcasestr - found
+-- Looking for wcscmp
+-- Looking for wcscmp - found
+-- Looking for _wcsdup
+[39/55] Building CXX object glslang/CMakeFiles/glslang.dir/MachineIndependent/preprocessor/PpTokens.cpp.o
+-- Looking for _wcsdup - not found
+-- Looking for wcsdup
+-- Looking for wcsdup - found
+-- Looking for wcslcat
+-- Looking for wcslcat - found
+-- Looking for wcslcpy
+[40/55] Building CXX object glslang/CMakeFiles/glslang.dir/MachineIndependent/preprocessor/Pp.cpp.o
+-- Looking for wcslcpy - found
+-- Looking for wcslen
+[41/55] Building CXX object glslang/CMakeFiles/glslang.dir/__/SPIRV/InReadableOrder.cpp.o
+-- Looking for wcslen - found
+-- Looking for wcsncmp
+[42/55] Building CXX object glslang/CMakeFiles/glslang.dir/MachineIndependent/propagateNoContraction.cpp.o
+[43/55] Building CXX object glslang/CMakeFiles/glslang.dir/MachineIndependent/reflection.cpp.o
+-- Looking for wcsncmp - found
+-- Looking for wcsstr
+-- Looking for wcsstr - found
+-- Looking for wcscasecmp
+-- Looking for wcscasecmp - found
+-- Looking for _wcsicmp
+[44/55] Building CXX object glslang/CMakeFiles/glslang.dir/MachineIndependent/linkValidate.cpp.o
+-- Looking for _wcsicmp - not found
+-- Looking for wcsncasecmp
+[45/55] Building CXX object glslang/CMakeFiles/glslang.dir/__/SPIRV/Logger.cpp.o
+-- Looking for wcsncasecmp - found
+-- Looking for _wcsnicmp
+-- Looking for _wcsnicmp - not found
+-- Looking for sscanf
+[46/55] Building CXX object glslang/CMakeFiles/glslang.dir/__/SPIRV/SpvTools.cpp.o
+-- Looking for sscanf - found
+-- Looking for vsscanf
+-- Looking for vsscanf - found
+-- Looking for vsnprintf
+-- Looking for vsnprintf - found
+-- Looking for fopen64
+-- Looking for fopen64 - found
+-- Looking for fseeko
+-- Looking for fseeko - found
+-- Looking for fseeko64
+[47/55] Building CXX object glslang/CMakeFiles/glslang.dir/__/SPIRV/CInterface/spirv_c_interface.cpp.o
+-- Looking for fseeko64 - found
+-- Looking for _Exit
+-- Looking for _Exit - found
+-- Looking for sigaction
+[48/55] Building CXX object glslang/CMakeFiles/glslang.dir/__/SPIRV/doc.cpp.o
+-- Looking for sigaction - found
+-- Looking for sigtimedwait
+-- Looking for sigtimedwait - found
+-- Looking for setjmp
+[49/55] Building CXX object glslang/CMakeFiles/glslang.dir/MachineIndependent/ParseHelper.cpp.o
+[50/55] Building CXX object glslang/CMakeFiles/glslang.dir/__/SPIRV/disassemble.cpp.o
+-- Looking for setjmp - found
+-- Looking for nanosleep
+-- Looking for nanosleep - found
+-- Looking for sysconf
+-- Looking for sysconf - found
+-- Looking for sysctlbyname
+-- Looking for sysctlbyname - not found
+-- Looking for getauxval
+-- Looking for getauxval - found
+-- Looking for elf_aux_info
+-- Looking for elf_aux_info - not found
+-- Looking for poll
+-- Looking for poll - found
+-- Looking for memfd_create
+-- Looking for memfd_create - found
+-- Looking for posix_fallocate
+[51/55] Building CXX object glslang/CMakeFiles/glslang.dir/__/SPIRV/SpvPostProcess.cpp.o
+-- Looking for posix_fallocate - found
+-- Looking for pow in m
+-- Looking for pow in m - found
+-- Looking for atan
+-- Looking for atan - found
+-- Looking for atan2
+-- Looking for atan2 - found
+-- Looking for atanf
+-- Looking for atanf - found
+-- Looking for atan2f
+-- Looking for atan2f - found
+-- Looking for ceil
+-- Looking for ceil - found
+-- Looking for ceilf
+-- Looking for ceilf - found
+-- Looking for copysign
+-- Looking for copysign - found
+-- Looking for copysignf
+-- Looking for copysignf - found
+-- Looking for cos
+-- Looking for cos - found
+-- Looking for cosf
+[52/55] Building CXX object glslang/CMakeFiles/glslang.dir/__/SPIRV/SpvBuilder.cpp.o
+-- Looking for cosf - found
+-- Looking for exp
+-- Looking for exp - found
+-- Looking for expf
+-- Looking for expf - found
+-- Looking for fabs
+-- Looking for fabs - found
+-- Looking for fabsf
+-- Looking for fabsf - found
+-- Looking for floor
+-- Looking for floor - found
+-- Looking for floorf
+-- Looking for floorf - found
+-- Looking for fmod
+-- Looking for fmod - found
+-- Looking for fmodf
+-- Looking for fmodf - found
+-- Looking for log
+-- Looking for log - found
+-- Looking for logf
+-- Looking for logf - found
+-- Looking for log10
+[53/55] Building CXX object glslang/CMakeFiles/glslang.dir/__/SPIRV/GlslangToSpv.cpp.o
+-- Looking for log10 - found
+-- Looking for log10f
+-- Looking for log10f - found
+-- Looking for lround
+-- Looking for lround - found
+-- Looking for lroundf
+-- Looking for lroundf - found
+-- Looking for pow
+-- Looking for pow - found
+-- Looking for powf
+-- Looking for powf - found
+-- Looking for round
+-- Looking for round - found
+-- Looking for roundf
+-- Looking for roundf - found
+-- Looking for scalbn
+-- Looking for scalbn - found
+-- Looking for scalbnf
+-- Looking for scalbnf - found
+-- Looking for sin
+-- Looking for sin - found
+-- Looking for sinf
+-- Looking for sinf - found
+-- Looking for sqrt
+-- Looking for sqrt - found
+-- Looking for sqrtf
+-- Looking for sqrtf - found
+-- Looking for tan
+-- Looking for tan - found
+-- Looking for tanf
+-- Looking for tanf - found
+-- Looking for acos
+-- Looking for acos - found
+-- Looking for acosf
+-- Looking for acosf - found
+-- Looking for asin
+-- Looking for asin - found
+-- Looking for asinf
+-- Looking for asinf - found
+-- Looking for trunc
+[54/55] Linking CXX static library glslang/libglslang.a
+[54/55] Install the project...
+-- Install configuration: "Debug"
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/glslang-vulkan/lib64/libSPIRV.a
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/glslang-vulkan/include/glslang/SPIRV/GlslangToSpv.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/glslang-vulkan/include/glslang/SPIRV/disassemble.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/glslang-vulkan/include/glslang/SPIRV/Logger.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/glslang-vulkan/include/glslang/SPIRV/spirv.hpp11
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/glslang-vulkan/include/glslang/SPIRV/SpvTools.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/glslang-vulkan/lib64/libOSDependent.a
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/glslang-vulkan/lib64/libglslang.a
+-- Looking for trunc - found
+-- Looking for truncf
+-- Looking for truncf - found
+-- Performing Test ICONV_IN_LIBC
+-- Performing Test ICONV_IN_LIBC - Success
+-- Performing Test ICONV_IN_LIBICONV
+-- Performing Test ICONV_IN_LIBICONV - Failed
+-- Looking for alloca.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/glslang-vulkan/lib64/libMachineIndependent.a
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/glslang-vulkan/lib64/libGenericCodeGen.a
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/glslang-vulkan/include/glslang/Public/ResourceLimits.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/glslang-vulkan/include/glslang/Public/ShaderLang.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/glslang-vulkan/include/glslang/Public/resource_limits_c.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/glslang-vulkan/include/glslang/Include/glslang_c_interface.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/glslang-vulkan/include/glslang/Include/glslang_c_shader_types.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/glslang-vulkan/include/glslang/Include/ResourceLimits.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/glslang-vulkan/include/glslang/Include/visibility.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/glslang-vulkan/include/glslang/MachineIndependent/Versions.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/glslang-vulkan/include/glslang/build_info.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/glslang-vulkan/lib64/libglslang-default-resource-limits.a
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/glslang-vulkan/lib64/cmake/glslang/glslang-targets.cmake
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/glslang-vulkan/lib64/cmake/glslang/glslang-targets-debug.cmake
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/glslang-vulkan/lib64/cmake/glslang/glslang-config.cmake
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/glslang-vulkan/lib64/cmake/glslang/glslang-config-version.cmake
+-- Looking for alloca.h - found
+-- Looking for alloca
+-- Looking for alloca - found
+-- Looking for alloca
+-- Looking for alloca - found
+-- Looking for alloca
+-- Looking for alloca - not found
+-- Performing Test HAVE_SA_SIGACTION
+-- Performing Test HAVE_SA_SIGACTION - Success
+-- Looking for dlopen
+-- Looking for dlopen - found
+-- Performing Test HAVE_O_CLOEXEC
+-- Performing Test HAVE_O_CLOEXEC - Success
+-- Performing Test HAVE_OSS_SYS_SOUNDCARD_H
+-- Performing Test HAVE_OSS_SYS_SOUNDCARD_H - Success
+-- Found ALSA: /usr/lib64/libasound.so (found version "1.2.16.1")
+-- dynamic libasound -> libasound.so.2
+-- Checking for module 'jack'
+--   Found jack, version 3.1609.0
+-- dynamic libjack -> libjack.so.0
+-- Checking for module 'libpipewire-0.3>=0.3.20'
+--   Found libpipewire-0.3, version 1.6.9
+-- dynamic libpipewire-0.3 -> libpipewire-0.3.so.0
+-- Checking for module 'libpulse>=0.9.15'
+--   Found libpulse, version 17.0
+-- dynamic libpulse -> libpulse.so.0
+-- Checking for module 'esound'
+--   Found esound, version 0.2.41
+-- dynamic libesd -> libesd.so.0
+-- Looking for audio/audiolib.h
+-- Looking for audio/audiolib.h - not found
+-- Checking for module 'sndio'
+--   Package 'sndio' not found
+-- Checking for module 'bcm_host'
+--   Package 'bcm_host' not found
+-- Checking for module 'brcmegl'
+--   Package 'brcmegl' not found
+-- Performing Test HAVE_RPI
+-- Performing Test HAVE_RPI - Failed
+-- dynamic libX11 -> libX11.so.6
+-- dynamic libXext -> libXext.so.6
+-- dynamic libXcursor -> libXcursor.so.1
+-- dynamic libXi -> libXi.so.6
+-- dynamic libXfixes -> libXfixes.so.3
+-- dynamic libXrandr -> libXrandr.so.2
+-- dynamic libXrender -> libXrender.so.1
+-- dynamic libXss -> libXss.so.1
+-- Looking for shmat
+-- Looking for shmat - found
+-- Performing Test HAVE_XGENERICEVENT
+-- Performing Test HAVE_XGENERICEVENT - Success
+-- Looking for XkbKeycodeToKeysym
+-- Looking for XkbKeycodeToKeysym - found
+-- Performing Test HAVE_XINPUT2_MULTITOUCH
+-- Performing Test HAVE_XINPUT2_MULTITOUCH - Success
+-- Performing Test HAVE_XFIXES_H
+-- Performing Test HAVE_XFIXES_H - Success
+-- Checking for modules 'libdrm;gbm;egl'
+--   Found libdrm, version 2.4.134
+--   Found gbm, version 26.2.4
+--   Found egl, version 1.5
+-- Checking for modules 'wayland-client>=1.18;wayland-egl;wayland-cursor;egl;xkbcommon>=0.5.0'
+--   Found wayland-client, version 1.26.0
+--   Found wayland-egl, version 18.1.0
+--   Found wayland-cursor, version 1.26.0
+--   Found egl, version 1.5
+--   Found xkbcommon, version 1.13.2
+-- dynamic libwayland-client -> libwayland-client.so.0
+-- dynamic libwayland-egl -> libwayland-egl.so.1
+-- dynamic libwayland-cursor -> libwayland-cursor.so.0
+-- dynamic libxkbcommon -> libxkbcommon.so.0
+-- Checking for module 'libdecor-0'
+--   Found libdecor-0, version 0.2.5
+-- dynamic libdecor-0 -> libdecor-0.so.0
+-- Looking for libdecor_frame_get_max_content_size
+-- Looking for libdecor_frame_get_max_content_size - found
+-- Looking for libdecor_frame_get_min_content_size
+-- Looking for libdecor_frame_get_min_content_size - found
+-- Performing Test HAVE_VIVANTE_VDK
+-- Performing Test HAVE_VIVANTE_VDK - Failed
+-- Performing Test HAVE_VIVANTE_EGL_FB
+-- Performing Test HAVE_VIVANTE_EGL_FB - Failed
+-- Performing Test HAVE_LINUX_INPUT_H
+-- Performing Test HAVE_LINUX_INPUT_H - Success
+-- Performing Test HAVE_INPUT_KD
+-- Performing Test HAVE_INPUT_KD - Success
+-- Looking for libudev.h
+-- Looking for libudev.h - found
+-- dynamic libudev -> libudev.so.1
+-- Looking for sys/inotify.h
+-- Looking for sys/inotify.h - found
+-- Looking for inotify_init
+-- Looking for inotify_init - found
+-- Looking for inotify_init1
+-- Looking for inotify_init1 - found
+-- Checking for one of the modules 'dbus-1;dbus'
+-- Checking for one of the modules 'ibus-1.0;ibus'
+-- Performing Test LIBC_HAS_WORKING_LIBUNWIND
+-- Performing Test LIBC_HAS_WORKING_LIBUNWIND - Failed
+-- Performing Test LIBUNWIND_HAS_WORKINGLIBUNWIND
+-- Performing Test LIBUNWIND_HAS_WORKINGLIBUNWIND - Success
+-- Performing Test HAVE_PTHREADS
+-- Performing Test HAVE_PTHREADS - Success
+-- Performing Test HAVE_RECURSIVE_MUTEXES
+-- Performing Test HAVE_RECURSIVE_MUTEXES - Success
+-- Performing Test HAVE_PTHREADS_SEM
+-- Performing Test HAVE_PTHREADS_SEM - Success
+-- Performing Test HAVE_SEM_TIMEDWAIT
+-- Performing Test HAVE_SEM_TIMEDWAIT - Success
+-- Looking for include file pthread.h
+-- Looking for include file pthread.h - found
+-- Looking for include file pthread_np.h
+-- Looking for include file pthread_np.h - not found
+-- Performing Test HAVE_PTHREAD_SETNAME_NP
+-- Performing Test HAVE_PTHREAD_SETNAME_NP - Success
+-- Looking for clock_gettime in c
+-- Looking for clock_gettime in c - found
+-- Looking for linux/version.h
+-- Looking for linux/version.h - found
+-- Looking for samplerate.h
+-- Looking for samplerate.h - found
+-- dynamic libsamplerate -> libsamplerate.so.0
+-- Found Git: /usr/bin/git (found version "2.56.0")
+CMake Warning (deprecated) at CMakeLists.txt:3300 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+-- 
+-- SDL2 was configured with the following options:
+-- 
+-- Platform: Linux-7.2.8
+-- 64-bit:   TRUE
+-- Compiler: /usr/bin/cc
+-- Revision: SDL-release-2.32.10-0-g5d2495703
+-- 
+-- Subsystems:
+--   Atomic:    ON
+--   Audio:    ON
+--   Video:    ON
+--   Render:    ON
+--   Events:    ON
+--   Joystick:    ON
+--   Haptic:    ON
+--   Hidapi:    ON
+--   Power:    ON
+--   Threads:    ON
+--   Timers:    ON
+--   File:    ON
+--   Loadso:    ON
+--   CPUinfo:    ON
+--   Filesystem:    ON
+--   Sensor:    ON
+--   Locale:    ON
+--   Misc:    ON
+-- 
+-- Options:
+--   SDL2_DISABLE_INSTALL        (Wanted: OFF): OFF
+--   SDL2_DISABLE_SDL2MAIN       (Wanted: OFF): OFF
+--   SDL2_DISABLE_UNINSTALL      (Wanted: OFF): OFF
+--   SDL_3DNOW                   (Wanted: OFF): OFF
+--   SDL_ALSA                    (Wanted: ON): ON
+--   SDL_ALSA_SHARED             (Wanted: ON): ON
+--   SDL_ALTIVEC                 (Wanted: ON): OFF
+--   SDL_ARMNEON                 (Wanted: OFF): OFF
+--   SDL_ARMSIMD                 (Wanted: OFF): OFF
+--   SDL_ARTS                    (Wanted: ON): OFF
+--   SDL_ARTS_SHARED             (Wanted: ON): OFF
+--   SDL_ASAN                    (Wanted: OFF): OFF
+--   SDL_ASSEMBLY                (Wanted: ON): ON
+--   SDL_ASSERTIONS              (Wanted: auto): auto
+--   SDL_BACKGROUNDING_SIGNAL    (Wanted: OFF): OFF
+--   SDL_CCACHE                  (Wanted: ON): ON
+--   SDL_CLOCK_GETTIME           (Wanted: ON): ON
+--   SDL_COCOA                   (Wanted: OFF): OFF
+--   SDL_DBUS                    (Wanted: ON): ON
+--   SDL_DIRECTFB                (Wanted: OFF): OFF
+--   SDL_DIRECTFB_SHARED         (Wanted: OFF): OFF
+--   SDL_DIRECTX                 (Wanted: OFF): OFF
+--   SDL_DISKAUDIO               (Wanted: ON): ON
+--   SDL_DUMMYAUDIO              (Wanted: ON): ON
+--   SDL_DUMMYVIDEO              (Wanted: ON): ON
+--   SDL_ESD                     (Wanted: ON): ON
+--   SDL_ESD_SHARED              (Wanted: ON): ON
+--   SDL_FOREGROUNDING_SIGNAL    (Wanted: OFF): OFF
+--   SDL_FUSIONSOUND             (Wanted: OFF): OFF
+--   SDL_FUSIONSOUND_SHARED      (Wanted: OFF): OFF
+--   SDL_GCC_ATOMICS             (Wanted: ON): ON
+--   SDL_HIDAPI                  (Wanted: ON): ON
+--   SDL_HIDAPI_JOYSTICK         (Wanted: ON): ON
+--   SDL_HIDAPI_LIBUSB           (Wanted: OFF): OFF
+--   SDL_IBUS                    (Wanted: ON): ON
+--   SDL_INSTALL_TESTS           (Wanted: OFF): OFF
+--   SDL_JACK                    (Wanted: ON): ON
+--   SDL_JACK_SHARED             (Wanted: ON): ON
+--   SDL_KMSDRM                  (Wanted: ON): OFF
+--   SDL_KMSDRM_SHARED           (Wanted: ON): OFF
+--   SDL_LASX                    (Wanted: OFF): OFF
+--   SDL_LIBC                    (Wanted: ON): ON
+--   SDL_LIBICONV                (Wanted: OFF): OFF
+--   SDL_LIBSAMPLERATE           (Wanted: ON): ON
+--   SDL_LIBSAMPLERATE_SHARED    (Wanted: ON): ON
+--   SDL_LIBUDEV                 (Wanted: ON): ON
+--   SDL_LSX                     (Wanted: OFF): OFF
+--   SDL_METAL                   (Wanted: OFF): OFF
+--   SDL_MMX                     (Wanted: ON): ON
+--   SDL_NAS                     (Wanted: ON): OFF
+--   SDL_NAS_SHARED              (Wanted: ON): OFF
+--   SDL_OFFSCREEN               (Wanted: ON): ON
+--   SDL_OPENGL                  (Wanted: OFF): OFF
+--   SDL_OPENGLES                (Wanted: OFF): OFF
+--   SDL_OSS                     (Wanted: ON): ON
+--   SDL_PIPEWIRE                (Wanted: ON): ON
+--   SDL_PIPEWIRE_SHARED         (Wanted: ON): ON
+--   SDL_PTHREADS                (Wanted: ON): ON
+--   SDL_PTHREADS_SEM            (Wanted: ON): ON
+--   SDL_PULSEAUDIO              (Wanted: ON): ON
+--   SDL_PULSEAUDIO_SHARED       (Wanted: ON): ON
+--   SDL_RENDER_D3D              (Wanted: OFF): OFF
+--   SDL_RENDER_METAL            (Wanted: OFF): OFF
+--   SDL_RPATH                   (Wanted: ON): OFF
+--   SDL_RPI                     (Wanted: ON): OFF
+--   SDL_SNDIO                   (Wanted: ON): OFF
+--   SDL_SNDIO_SHARED            (Wanted: ON): OFF
+--   SDL_SSE                     (Wanted: ON): ON
+--   SDL_SSE2                    (Wanted: ON): ON
+--   SDL_SSE3                    (Wanted: ON): ON
+--   SDL_SSEMATH                 (Wanted: ON): ON
+--   SDL_STATIC_PIC              (Wanted: OFF): OFF
+--   SDL_SYSTEM_ICONV            (Wanted: ON): ON
+--   SDL_TESTS                   (Wanted: OFF): OFF
+--   SDL_VENDOR_INFO             (Wanted: ): OFF
+--   SDL_VIRTUAL_JOYSTICK        (Wanted: ON): ON
+--   SDL_VIVANTE                 (Wanted: ON): OFF
+--   SDL_VULKAN                  (Wanted: ON): ON
+--   SDL_WASAPI                  (Wanted: OFF): OFF
+--   SDL_WAYLAND                 (Wanted: ON): ON
+--   SDL_WAYLAND_LIBDECOR        (Wanted: ON): ON
+--   SDL_WAYLAND_LIBDECOR_SHARED (Wanted: ON): ON
+--   SDL_WAYLAND_QT_TOUCH        (Wanted: ON): ON
+--   SDL_WAYLAND_SHARED          (Wanted: ON): ON
+--   SDL_X11                     (Wanted: ON): ON
+--   SDL_X11_SHARED              (Wanted: ON): ON
+--   SDL_X11_XCURSOR             (Wanted: ON): ON
+--   SDL_X11_XDBE                (Wanted: ON): ON
+--   SDL_X11_XFIXES              (Wanted: ON): ON
+--   SDL_X11_XINPUT              (Wanted: ON): ON
+--   SDL_X11_XRANDR              (Wanted: ON): ON
+--   SDL_X11_XSCRNSAVER          (Wanted: ON): ON
+--   SDL_X11_XSHAPE              (Wanted: ON): ON
+--   SDL_XINPUT                  (Wanted: OFF): OFF
+-- 
+--  CFLAGS:         -idirafter "/data/local/games/src/Splatoon.recomp/cache/build-env/build/deps-build/sdl-source/src/video/khronos" -DHAVE_LINUX_VERSION_H
+--  EXTRA_CFLAGS:   -Wall -Wundef -fno-strict-aliasing -Wdeclaration-after-statement -fvisibility=hidden -Wshadow -Wno-unused-local-typedefs -fdiagnostics-color=always -mmmx -msse -msse2 -msse3  -isystem/usr/include -D_REENTRANT  -isystem/usr/include/pipewire-0.3  -isystem/usr/include/spa-0.2 -fno-strict-overflow
+--  EXTRA_LDFLAGS: -pthread -Wl,--no-undefined
+--  EXTRA_LIBS:    m
+-- 
+--  Build Shared Library: OFF
+--  Build Static Library: ON
+--  Build Static Library with Position Independent Code: OFF
+-- 
+-- If something was not detected, although the libraries
+-- were installed, then make sure you have set the
+-- CFLAGS and LDFLAGS environment variables correctly.
+-- 
+-- Configuring done (18.2s)
+-- Generating done (0.0s)
+CMake Warning (unused-cli):
+  Manually-specified variables were not used by the project:
+
+    SDL_FORCE_STATIC_VCRT
+
+
+-- Build files have been written to: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps-build/sdl2-vulkan-build
+[1/346] Generating include/SDL2/SDL_assert.h
+[2/346] Generating include/SDL2/SDL_bits.h
+[3/346] Generating include/SDL2/SDL_copying.h
+[4/346] Generating include/SDL2/SDL.h
+[5/346] Generating include/SDL2/SDL_blendmode.h
+[6/346] Generating include/SDL2/SDL_endian.h
+[7/346] Generating include/SDL2/SDL_clipboard.h
+[8/346] Generating include/SDL2/SDL_error.h
+[9/346] Generating include/SDL2/SDL_audio.h
+[10/346] Generating include/SDL2/SDL_egl.h
+[11/346] Generating include/SDL2/SDL_cpuinfo.h
+[12/346] Generating include/SDL2/SDL_atomic.h
+[13/346] Generating include/SDL2/SDL_events.h
+[14/346] Generating include/SDL2/SDL_gamecontroller.h
+[15/346] Generating include/SDL2/SDL_filesystem.h
+[16/346] Generating include/SDL2/SDL_guid.h
+[17/346] Generating include/SDL2/SDL_hidapi.h
+[18/346] Generating include/SDL2/SDL_joystick.h
+[19/346] Generating include/SDL2/SDL_gesture.h
+[20/346] Generating include/SDL2/SDL_hints.h
+[21/346] Generating include/SDL2/SDL_haptic.h
+[22/346] Generating include/SDL2/SDL_keyboard.h
+[23/346] Generating include/SDL2/SDL_keycode.h
+[24/346] Generating include/SDL2/SDL_loadso.h
+[25/346] Generating include/SDL2/SDL_locale.h
+[26/346] Generating include/SDL2/SDL_log.h
+[27/346] Generating include/SDL2/SDL_main.h
+[28/346] Generating include/SDL2/SDL_messagebox.h
+[29/346] Generating include/SDL2/SDL_misc.h
+[30/346] Generating include/SDL2/SDL_opengles.h
+[31/346] Generating include/SDL2/SDL_metal.h
+[32/346] Generating include/SDL2/SDL_name.h
+[33/346] Generating include/SDL2/SDL_mouse.h
+[34/346] Generating include/SDL2/SDL_opengles2.h
+[35/346] Generating include/SDL2/SDL_opengl.h
+[36/346] Generating include/SDL2/SDL_mutex.h
+[37/346] Generating include/SDL2/SDL_opengles2_gl2.h
+[38/346] Generating include/SDL2/SDL_opengles2_gl2ext.h
+[39/346] Generating include/SDL2/SDL_opengl_glext.h
+[40/346] Generating include/SDL2/SDL_opengles2_gl2platform.h
+[41/346] Generating include/SDL2/SDL_opengles2_khrplatform.h
+[42/346] Generating include/SDL2/SDL_pixels.h
+[43/346] Generating include/SDL2/SDL_power.h
+[44/346] Generating include/SDL2/SDL_rwops.h
+[45/346] Generating include/SDL2/SDL_quit.h
+[46/346] Generating include/SDL2/SDL_rect.h
+[47/346] Generating include/SDL2/SDL_platform.h
+[48/346] Generating include/SDL2/SDL_render.h
+[49/346] Generating include/SDL2/SDL_scancode.h
+[50/346] Generating include/SDL2/SDL_shape.h
+[51/346] Generating include/SDL2/SDL_sensor.h
+[52/346] Generating include/SDL2/SDL_stdinc.h
+[53/346] Generating include/SDL2/SDL_system.h
+[54/346] Generating include/SDL2/SDL_test.h
+[55/346] Generating include/SDL2/SDL_test_common.h
+[56/346] Generating include/SDL2/SDL_surface.h
+[57/346] Generating include/SDL2/SDL_test_crc32.h
+[58/346] Generating include/SDL2/SDL_test_assert.h
+[59/346] Generating include/SDL2/SDL_syswm.h
+[60/346] Generating include/SDL2/SDL_test_compare.h
+[61/346] Generating include/SDL2/SDL_test_fuzzer.h
+[62/346] Generating include/SDL2/SDL_test_font.h
+[63/346] Generating include/SDL2/SDL_test_harness.h
+[64/346] Generating include/SDL2/SDL_test_images.h
+[65/346] Generating include/SDL2/SDL_test_md5.h
+[66/346] Generating include/SDL2/SDL_test_random.h
+[67/346] Generating include/SDL2/SDL_version.h
+[68/346] Generating include/SDL2/SDL_test_memory.h
+[69/346] Generating include/SDL2/SDL_test_log.h
+[70/346] Generating include/SDL2/SDL_touch.h
+[71/346] Generating include/SDL2/SDL_types.h
+[72/346] Generating include/SDL2/SDL_thread.h
+[73/346] Generating include/SDL2/SDL_video.h
+[74/346] Generating wayland-generated-protocols/fractional-scale-v1-client-protocol.h
+[75/346] Generating wayland-generated-protocols/cursor-shape-v1-client-protocol.h
+[76/346] Generating wayland-generated-protocols/idle-inhibit-unstable-v1-client-protocol.h
+[77/346] Generating include/SDL2/begin_code.h
+[78/346] Generating include/SDL2/SDL_timer.h
+[79/346] Generating include/SDL2/SDL_vulkan.h
+[80/346] Generating include/SDL2/close_code.h
+[81/346] Generating wayland-generated-protocols/keyboard-shortcuts-inhibit-unstable-v1-client-protocol.h
+[82/346] Generating wayland-generated-protocols/primary-selection-unstable-v1-client-protocol.h
+[83/346] Generating wayland-generated-protocols/pointer-constraints-unstable-v1-client-protocol.h
+[84/346] Generating wayland-generated-protocols/relative-pointer-unstable-v1-client-protocol.h
+[85/346] Generating wayland-generated-protocols/text-input-unstable-v3-client-protocol.h
+[86/346] Generating wayland-generated-protocols/viewporter-client-protocol.h
+[87/346] Generating wayland-generated-protocols/tablet-unstable-v2-client-protocol.h
+[88/346] Generating wayland-generated-protocols/xdg-decoration-unstable-v1-client-protocol.h
+[89/346] Generating wayland-generated-protocols/xdg-activation-v1-client-protocol.h
+[90/346] Generating wayland-generated-protocols/xdg-toplevel-icon-v1-client-protocol.h
+[91/346] Generating wayland-generated-protocols/xdg-output-unstable-v1-client-protocol.h
+[92/346] Generating wayland-generated-protocols/xdg-shell-client-protocol.h
+[93/346] Generating wayland-generated-protocols/wayland-client-protocol.h
+[94/346] Generating wayland-generated-protocols/idle-inhibit-unstable-v1-protocol.c
+[95/346] Generating wayland-generated-protocols/cursor-shape-v1-protocol.c
+[96/346] Generating wayland-generated-protocols/relative-pointer-unstable-v1-protocol.c
+[97/346] Generating wayland-generated-protocols/fractional-scale-v1-protocol.c
+[98/346] Generating wayland-generated-protocols/keyboard-shortcuts-inhibit-unstable-v1-protocol.c
+[99/346] Generating wayland-generated-protocols/pointer-constraints-unstable-v1-protocol.c
+[100/346] Generating wayland-generated-protocols/viewporter-protocol.c
+[101/346] Generating wayland-generated-protocols/primary-selection-unstable-v1-protocol.c
+[102/346] Generating wayland-generated-protocols/text-input-unstable-v3-protocol.c
+[103/346] Generating wayland-generated-protocols/xdg-activation-v1-protocol.c
+[104/346] Generating wayland-generated-protocols/tablet-unstable-v2-protocol.c
+[105/346] Generating wayland-generated-protocols/xdg-decoration-unstable-v1-protocol.c
+[106/346] Generating wayland-generated-protocols/xdg-output-unstable-v1-protocol.c
+[107/346] Generating wayland-generated-protocols/xdg-toplevel-icon-v1-protocol.c
+[108/346] Generating wayland-generated-protocols/xdg-shell-protocol.c
+[109/346] Generating wayland-generated-protocols/wayland-protocol.c
+[110/346] Building C object CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.o
+[111/346] Building C object CMakeFiles/SDL2-static.dir/src/SDL_error.c.o
+[112/346] Building C object CMakeFiles/SDL2-static.dir/src/SDL_guid.c.o
+[113/346] Building C object CMakeFiles/SDL2-static.dir/src/SDL_hints.c.o
+[114/346] Building C object CMakeFiles/SDL2-static.dir/src/SDL_utils.c.o
+[115/346] Building C object CMakeFiles/SDL2-static.dir/src/atomic/SDL_atomic.c.o
+[116/346] Building C object CMakeFiles/SDL2-static.dir/src/SDL_log.c.o
+[117/346] Building C object CMakeFiles/SDL2-static.dir/src/atomic/SDL_spinlock.c.o
+[118/346] Building C object CMakeFiles/SDL2-static.dir/src/SDL_dataqueue.c.o
+[119/346] Building C object CMakeFiles/SDL2-static.dir/src/SDL_list.c.o
+[120/346] Building C object CMakeFiles/SDL2-static.dir/src/SDL.c.o
+[121/346] Building C object CMakeFiles/SDL2-static.dir/src/SDL_assert.c.o
+[122/346] Building C object CMakeFiles/SDL2-static.dir/src/audio/SDL_audio.c.o
+[123/346] Building C object CMakeFiles/SDL2-static.dir/src/audio/SDL_audiotypecvt.c.o
+[124/346] Building C object CMakeFiles/SDL2-static.dir/src/audio/SDL_audiocvt.c.o
+[125/346] Building C object CMakeFiles/SDL2-static.dir/src/audio/SDL_mixer.c.o
+[126/346] Building C object CMakeFiles/SDL2-static.dir/src/audio/SDL_wave.c.o
+[127/346] Building C object CMakeFiles/SDL2-static.dir/src/cpuinfo/SDL_cpuinfo.c.o
+[128/346] Building C object CMakeFiles/SDL2-static.dir/src/dynapi/SDL_dynapi.c.o
+[129/346] Building C object CMakeFiles/SDL2-static.dir/src/audio/SDL_audiodev.c.o
+[130/346] Building C object CMakeFiles/SDL2-static.dir/src/events/SDL_displayevents.c.o
+[131/346] Building C object CMakeFiles/SDL2-static.dir/src/events/SDL_clipboardevents.c.o
+[132/346] Building C object CMakeFiles/SDL2-static.dir/src/events/SDL_dropevents.c.o
+[133/346] Building C object CMakeFiles/SDL2-static.dir/src/events/SDL_gesture.c.o
+[134/346] Building C object CMakeFiles/SDL2-static.dir/src/events/SDL_scancode_tables.c.o
+[135/346] Building C object CMakeFiles/SDL2-static.dir/src/events/SDL_keysym_to_scancode.c.o
+[136/346] Building C object CMakeFiles/SDL2-static.dir/src/events/SDL_events.c.o
+[137/346] Building C object CMakeFiles/SDL2-static.dir/src/events/SDL_quit.c.o
+[138/346] Building C object CMakeFiles/SDL2-static.dir/src/events/SDL_keyboard.c.o
+[139/346] Building C object CMakeFiles/SDL2-static.dir/src/events/SDL_mouse.c.o
+[140/346] Building C object CMakeFiles/SDL2-static.dir/src/events/SDL_touch.c.o
+[141/346] Building C object CMakeFiles/SDL2-static.dir/src/events/SDL_windowevents.c.o
+[142/346] Building C object CMakeFiles/SDL2-static.dir/src/events/imKStoUCS.c.o
+[143/346] Building C object CMakeFiles/SDL2-static.dir/src/file/SDL_rwops.c.o
+[144/346] Building C object CMakeFiles/SDL2-static.dir/src/haptic/SDL_haptic.c.o
+[145/346] Building C object CMakeFiles/SDL2-static.dir/src/libm/e_atan2.c.o
+[146/346] Building C object CMakeFiles/SDL2-static.dir/src/joystick/controller_type.c.o
+[147/346] Building C object CMakeFiles/SDL2-static.dir/src/libm/e_exp.c.o
+[148/346] Building C object CMakeFiles/SDL2-static.dir/src/joystick/SDL_steam_virtual_gamepad.c.o
+[149/346] Building C object CMakeFiles/SDL2-static.dir/src/libm/e_fmod.c.o
+[150/346] Building C object CMakeFiles/SDL2-static.dir/src/joystick/SDL_gamecontroller.c.o
+[151/346] Building C object CMakeFiles/SDL2-static.dir/src/joystick/SDL_joystick.c.o
+[152/346] Building C object CMakeFiles/SDL2-static.dir/src/libm/e_log.c.o
+[153/346] Building C object CMakeFiles/SDL2-static.dir/src/libm/e_log10.c.o
+[154/346] Building C object CMakeFiles/SDL2-static.dir/src/libm/e_pow.c.o
+[155/346] Building C object CMakeFiles/SDL2-static.dir/src/hidapi/SDL_hidapi.c.o
+[156/346] Building C object CMakeFiles/SDL2-static.dir/src/libm/e_rem_pio2.c.o
+[157/346] Building C object CMakeFiles/SDL2-static.dir/src/libm/e_sqrt.c.o
+[158/346] Building C object CMakeFiles/SDL2-static.dir/src/libm/k_rem_pio2.c.o
+[159/346] Building C object CMakeFiles/SDL2-static.dir/src/libm/k_cos.c.o
+[160/346] Building C object CMakeFiles/SDL2-static.dir/src/libm/k_sin.c.o
+[161/346] Building C object CMakeFiles/SDL2-static.dir/src/libm/k_tan.c.o
+[162/346] Building C object CMakeFiles/SDL2-static.dir/src/libm/s_atan.c.o
+[163/346] Building C object CMakeFiles/SDL2-static.dir/src/libm/s_copysign.c.o
+[164/346] Building C object CMakeFiles/SDL2-static.dir/src/libm/s_cos.c.o
+[165/346] Building C object CMakeFiles/SDL2-static.dir/src/libm/s_fabs.c.o
+[166/346] Building C object CMakeFiles/SDL2-static.dir/src/libm/s_floor.c.o
+[167/346] Building C object CMakeFiles/SDL2-static.dir/src/libm/s_sin.c.o
+[168/346] Building C object CMakeFiles/SDL2-static.dir/src/libm/s_scalbn.c.o
+[169/346] Building C object CMakeFiles/SDL2-static.dir/src/libm/s_tan.c.o
+[170/346] Building C object CMakeFiles/SDL2-static.dir/src/locale/SDL_locale.c.o
+[171/346] Building C object CMakeFiles/SDL2-static.dir/src/misc/SDL_url.c.o
+[172/346] Building C object CMakeFiles/SDL2-static.dir/src/render/SDL_d3dmath.c.o
+[173/346] Building C object CMakeFiles/SDL2-static.dir/src/power/SDL_power.c.o
+[174/346] Building C object CMakeFiles/SDL2-static.dir/src/render/SDL_yuv_sw.c.o
+[175/346] Building C object CMakeFiles/SDL2-static.dir/src/render/direct3d11/SDL_shaders_d3d11.c.o
+[176/346] Building C object CMakeFiles/SDL2-static.dir/src/render/direct3d/SDL_render_d3d.c.o
+[177/346] Building C object CMakeFiles/SDL2-static.dir/src/render/direct3d11/SDL_render_d3d11.c.o
+[178/346] Building C object CMakeFiles/SDL2-static.dir/src/render/direct3d/SDL_shaders_d3d.c.o
+[179/346] Building C object CMakeFiles/SDL2-static.dir/src/render/SDL_render.c.o
+[180/346] Building C object CMakeFiles/SDL2-static.dir/src/render/direct3d12/SDL_shaders_d3d12.c.o
+[181/346] Building C object CMakeFiles/SDL2-static.dir/src/render/direct3d12/SDL_render_d3d12.c.o
+[182/346] Building C object CMakeFiles/SDL2-static.dir/src/render/opengl/SDL_shaders_gl.c.o
+[183/346] Building C object CMakeFiles/SDL2-static.dir/src/render/opengl/SDL_render_gl.c.o
+[184/346] Building C object CMakeFiles/SDL2-static.dir/src/render/opengles/SDL_render_gles.c.o
+[185/346] Building C object CMakeFiles/SDL2-static.dir/src/render/opengles2/SDL_render_gles2.c.o
+[186/346] Building C object CMakeFiles/SDL2-static.dir/src/render/ps2/SDL_render_ps2.c.o
+[187/346] Building C object CMakeFiles/SDL2-static.dir/src/render/psp/SDL_render_psp.c.o
+[188/346] Building C object CMakeFiles/SDL2-static.dir/src/render/opengles2/SDL_shaders_gles2.c.o
+[189/346] Building C object CMakeFiles/SDL2-static.dir/src/render/software/SDL_blendfillrect.c.o
+[190/346] Building C object CMakeFiles/SDL2-static.dir/src/render/software/SDL_drawpoint.c.o
+[191/346] Building C object CMakeFiles/SDL2-static.dir/src/render/software/SDL_blendline.c.o
+[192/346] Building C object CMakeFiles/SDL2-static.dir/src/render/software/SDL_blendpoint.c.o
+[193/346] Building C object CMakeFiles/SDL2-static.dir/src/render/software/SDL_drawline.c.o
+[194/346] Building C object CMakeFiles/SDL2-static.dir/src/render/software/SDL_triangle.c.o
+[195/346] Building C object CMakeFiles/SDL2-static.dir/src/render/vitagxm/SDL_render_vita_gxm.c.o
+[196/346] Building C object CMakeFiles/SDL2-static.dir/src/render/vitagxm/SDL_render_vita_gxm_memory.c.o
+[197/346] Building C object CMakeFiles/SDL2-static.dir/src/render/software/SDL_render_sw.c.o
+[198/346] Building C object CMakeFiles/SDL2-static.dir/src/render/vitagxm/SDL_render_vita_gxm_tools.c.o
+[199/346] Building C object CMakeFiles/SDL2-static.dir/src/render/software/SDL_rotate.c.o
+[200/346] Building C object CMakeFiles/SDL2-static.dir/src/stdlib/SDL_crc32.c.o
+[201/346] Building C object CMakeFiles/SDL2-static.dir/src/stdlib/SDL_crc16.c.o
+[202/346] Building C object CMakeFiles/SDL2-static.dir/src/stdlib/SDL_iconv.c.o
+[203/346] Building C object CMakeFiles/SDL2-static.dir/src/stdlib/SDL_getenv.c.o
+[204/346] Building C object CMakeFiles/SDL2-static.dir/src/stdlib/SDL_malloc.c.o
+[205/346] Building C object CMakeFiles/SDL2-static.dir/src/stdlib/SDL_mslibc.c.o
+[206/346] Building C object CMakeFiles/SDL2-static.dir/src/stdlib/SDL_string.c.o
+[207/346] Building C object CMakeFiles/SDL2-static.dir/src/stdlib/SDL_qsort.c.o
+/data/local/games/src/Splatoon.recomp/cache/build-env/build/deps-build/sdl-source/src/stdlib/SDL_qsort.c: In function ‘SDL_bsearch’:
+/data/local/games/src/Splatoon.recomp/cache/build-env/build/deps-build/sdl-source/src/stdlib/SDL_qsort.c:549:12: warning: return discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  549 |     return bsearch(key, base, nmemb, size, compare);
+      |            ^~~~~~~
+[208/346] Building C object CMakeFiles/SDL2-static.dir/src/stdlib/SDL_strtokr.c.o
+[209/346] Building C object CMakeFiles/SDL2-static.dir/src/stdlib/SDL_stdlib.c.o
+[210/346] Building C object CMakeFiles/SDL2-static.dir/src/thread/SDL_thread.c.o
+[211/346] Building C object CMakeFiles/SDL2-static.dir/src/timer/SDL_timer.c.o
+[212/346] Building C object CMakeFiles/SDL2-static.dir/src/sensor/SDL_sensor.c.o
+[213/346] Building C object CMakeFiles/SDL2-static.dir/src/video/SDL_blit.c.o
+[214/346] Building C object CMakeFiles/SDL2-static.dir/src/video/SDL_blit_0.c.o
+[215/346] Building C object CMakeFiles/SDL2-static.dir/src/video/SDL_RLEaccel.c.o
+[216/346] Building C object CMakeFiles/SDL2-static.dir/src/video/SDL_blit_1.c.o
+[217/346] Building C object CMakeFiles/SDL2-static.dir/src/video/SDL_blit_A.c.o
+[218/346] Building C object CMakeFiles/SDL2-static.dir/src/video/SDL_blit_N.c.o
+[219/346] Building C object CMakeFiles/SDL2-static.dir/src/video/SDL_blit_slow.c.o
+[220/346] Building C object CMakeFiles/SDL2-static.dir/src/video/SDL_blit_auto.c.o
+[221/346] Building C object CMakeFiles/SDL2-static.dir/src/video/SDL_blit_copy.c.o
+[222/346] Building C object CMakeFiles/SDL2-static.dir/src/video/SDL_egl.c.o
+[223/346] Building C object CMakeFiles/SDL2-static.dir/src/video/SDL_fillrect.c.o
+[224/346] Building C object CMakeFiles/SDL2-static.dir/src/video/SDL_bmp.c.o
+[225/346] Building C object CMakeFiles/SDL2-static.dir/src/video/SDL_clipboard.c.o
+[226/346] Building C object CMakeFiles/SDL2-static.dir/src/video/SDL_rect.c.o
+[227/346] Building C object CMakeFiles/SDL2-static.dir/src/video/SDL_stretch.c.o
+[228/346] Building C object CMakeFiles/SDL2-static.dir/src/video/SDL_pixels.c.o
+[229/346] Building C object CMakeFiles/SDL2-static.dir/src/video/SDL_vulkan_utils.c.o
+[230/346] Building C object CMakeFiles/SDL2-static.dir/src/video/SDL_shape.c.o
+[231/346] Building C object CMakeFiles/SDL2-static.dir/src/video/SDL_yuv.c.o
+[232/346] Building C object CMakeFiles/SDL2-static.dir/src/video/yuv2rgb/yuv_rgb_sse.c.o
+[233/346] Building C object CMakeFiles/SDL2-static.dir/src/video/SDL_surface.c.o
+[234/346] Building C object CMakeFiles/SDL2-static.dir/src/video/SDL_video.c.o
+[235/346] Building C object CMakeFiles/SDL2-static.dir/src/video/yuv2rgb/yuv_rgb_lsx.c.o
+[236/346] Building C object CMakeFiles/SDL2-static.dir/src/video/yuv2rgb/yuv_rgb_std.c.o
+[237/346] Building C object CMakeFiles/SDL2-static.dir/src/audio/dummy/SDL_dummyaudio.c.o
+[238/346] Building C object CMakeFiles/SDL2-static.dir/src/audio/disk/SDL_diskaudio.c.o
+[239/346] Building C object CMakeFiles/SDL2-static.dir/src/loadso/dlopen/SDL_sysloadso.c.o
+[240/346] Building C object CMakeFiles/SDL2-static.dir/src/joystick/virtual/SDL_virtualjoystick.c.o
+[241/346] Building C object CMakeFiles/SDL2-static.dir/src/video/dummy/SDL_nullevents.c.o
+[242/346] Building C object CMakeFiles/SDL2-static.dir/src/video/dummy/SDL_nullframebuffer.c.o
+[243/346] Building C object CMakeFiles/SDL2-static.dir/src/video/dummy/SDL_nullvideo.c.o
+[244/346] Building C object CMakeFiles/SDL2-static.dir/src/video/offscreen/SDL_offscreenevents.c.o
+[245/346] Building C object CMakeFiles/SDL2-static.dir/src/video/offscreen/SDL_offscreenopengles.c.o
+[246/346] Building C object CMakeFiles/SDL2-static.dir/src/video/offscreen/SDL_offscreenwindow.c.o
+[247/346] Building C object CMakeFiles/SDL2-static.dir/src/video/offscreen/SDL_offscreenvideo.c.o
+[248/346] Building C object CMakeFiles/SDL2-static.dir/src/video/offscreen/SDL_offscreenframebuffer.c.o
+[249/346] Building C object CMakeFiles/SDL2-static.dir/src/audio/alsa/SDL_alsa_audio.c.o
+[250/346] Building C object CMakeFiles/SDL2-static.dir/src/audio/jack/SDL_jackaudio.c.o
+[251/346] Building C object CMakeFiles/SDL2-static.dir/src/audio/pipewire/SDL_pipewire.c.o
+[252/346] Building C object CMakeFiles/SDL2-static.dir/src/audio/pulseaudio/SDL_pulseaudio.c.o
+[253/346] Building C object CMakeFiles/SDL2-static.dir/src/audio/esd/SDL_esdaudio.c.o
+[254/346] Building C object CMakeFiles/SDL2-static.dir/src/audio/dsp/SDL_dspaudio.c.o
+[255/346] Building C object CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11dyn.c.o
+[256/346] Building C object CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11clipboard.c.o
+[257/346] Building C object CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11events.c.o
+[258/346] Building C object CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11framebuffer.c.o
+[259/346] Building C object CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11keyboard.c.o
+[260/346] Building C object CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11modes.c.o
+[261/346] Building C object CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11messagebox.c.o
+[262/346] Building C object CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11mouse.c.o
+[263/346] Building C object CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11opengl.c.o
+[264/346] Building C object CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11opengles.c.o
+[265/346] Building C object CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11shape.c.o
+[266/346] Building C object CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11touch.c.o
+[267/346] Building C object CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11video.c.o
+[268/346] Building C object CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11vulkan.c.o
+[269/346] Building C object CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11window.c.o
+[270/346] Building C object CMakeFiles/SDL2-static.dir/src/video/x11/edid-parse.c.o
+[271/346] Building C object CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11xinput2.c.o
+[272/346] Building C object CMakeFiles/SDL2-static.dir/src/video/x11/SDL_x11xfixes.c.o
+[273/346] Building C object CMakeFiles/SDL2-static.dir/src/video/wayland/SDL_waylanddyn.c.o
+[274/346] Building C object CMakeFiles/SDL2-static.dir/src/video/wayland/SDL_waylandclipboard.c.o
+[275/346] Building C object CMakeFiles/SDL2-static.dir/src/video/wayland/SDL_waylandopengles.c.o
+[276/346] Building C object CMakeFiles/SDL2-static.dir/src/video/wayland/SDL_waylanddatamanager.c.o
+[277/346] Building C object CMakeFiles/SDL2-static.dir/src/video/wayland/SDL_waylandevents.c.o
+[278/346] Building C object CMakeFiles/SDL2-static.dir/src/video/wayland/SDL_waylandkeyboard.c.o
+[279/346] Building C object CMakeFiles/SDL2-static.dir/src/video/wayland/SDL_waylandmessagebox.c.o
+[280/346] Building C object CMakeFiles/SDL2-static.dir/src/video/wayland/SDL_waylandmouse.c.o
+[281/346] Building C object CMakeFiles/SDL2-static.dir/src/video/wayland/SDL_waylandshmbuffer.c.o
+[282/346] Building C object CMakeFiles/SDL2-static.dir/src/video/wayland/SDL_waylandtouch.c.o
+[283/346] Building C object CMakeFiles/SDL2-static.dir/wayland-generated-protocols/cursor-shape-v1-protocol.c.o
+[284/346] Building C object CMakeFiles/SDL2-static.dir/wayland-generated-protocols/fractional-scale-v1-protocol.c.o
+[285/346] Building C object CMakeFiles/SDL2-static.dir/src/video/wayland/SDL_waylandvulkan.c.o
+[286/346] Building C object CMakeFiles/SDL2-static.dir/wayland-generated-protocols/idle-inhibit-unstable-v1-protocol.c.o
+[287/346] Building C object CMakeFiles/SDL2-static.dir/wayland-generated-protocols/keyboard-shortcuts-inhibit-unstable-v1-protocol.c.o
+[288/346] Building C object CMakeFiles/SDL2-static.dir/wayland-generated-protocols/pointer-constraints-unstable-v1-protocol.c.o
+[289/346] Building C object CMakeFiles/SDL2-static.dir/src/video/wayland/SDL_waylandvideo.c.o
+[290/346] Building C object CMakeFiles/SDL2-static.dir/src/video/wayland/SDL_waylandwindow.c.o
+[291/346] Building C object CMakeFiles/SDL2-static.dir/wayland-generated-protocols/primary-selection-unstable-v1-protocol.c.o
+[292/346] Building C object CMakeFiles/SDL2-static.dir/wayland-generated-protocols/relative-pointer-unstable-v1-protocol.c.o
+[293/346] Building C object CMakeFiles/SDL2-static.dir/wayland-generated-protocols/tablet-unstable-v2-protocol.c.o
+[294/346] Building C object CMakeFiles/SDL2-static.dir/wayland-generated-protocols/text-input-unstable-v3-protocol.c.o
+[295/346] Building C object CMakeFiles/SDL2-static.dir/wayland-generated-protocols/viewporter-protocol.c.o
+[296/346] Building C object CMakeFiles/SDL2-static.dir/wayland-generated-protocols/wayland-protocol.c.o
+[297/346] Building C object CMakeFiles/SDL2-static.dir/wayland-generated-protocols/xdg-activation-v1-protocol.c.o
+[298/346] Building C object CMakeFiles/SDL2-static.dir/wayland-generated-protocols/xdg-decoration-unstable-v1-protocol.c.o
+[299/346] Building C object CMakeFiles/SDL2-static.dir/wayland-generated-protocols/xdg-shell-protocol.c.o
+[300/346] Building C object CMakeFiles/SDL2-static.dir/wayland-generated-protocols/xdg-output-unstable-v1-protocol.c.o
+[301/346] Building C object CMakeFiles/SDL2-static.dir/wayland-generated-protocols/xdg-toplevel-icon-v1-protocol.c.o
+[302/346] Building C object CMakeFiles/SDL2-static.dir/src/core/unix/SDL_poll.c.o
+[303/346] Building C object CMakeFiles/SDL2-static.dir/src/core/linux/SDL_dbus.c.o
+[304/346] Building C object CMakeFiles/SDL2-static.dir/src/core/linux/SDL_ime.c.o
+[305/346] Building C object CMakeFiles/SDL2-static.dir/src/haptic/linux/SDL_syshaptic.c.o
+[306/346] Building C object CMakeFiles/SDL2-static.dir/src/core/linux/SDL_fcitx.c.o
+[307/346] Building C object CMakeFiles/SDL2-static.dir/src/core/linux/SDL_udev.c.o
+[308/346] Building C object CMakeFiles/SDL2-static.dir/src/core/linux/SDL_evdev_capabilities.c.o
+[309/346] Building C object CMakeFiles/SDL2-static.dir/src/core/linux/SDL_threadprio.c.o
+[310/346] Building C object CMakeFiles/SDL2-static.dir/src/core/linux/SDL_sandbox.c.o
+[311/346] Building C object CMakeFiles/SDL2-static.dir/src/core/linux/SDL_ibus.c.o
+[312/346] Building C object CMakeFiles/SDL2-static.dir/src/core/linux/SDL_evdev.c.o
+[313/346] Building C object CMakeFiles/SDL2-static.dir/src/core/linux/SDL_evdev_kbd.c.o
+[314/346] Building C object CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_combined.c.o
+[315/346] Building C object CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_gamecube.c.o
+[316/346] Building C object CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_rumble.c.o
+[317/346] Building C object CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_luna.c.o
+[318/346] Building C object CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_shield.c.o
+[319/346] Building C object CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_ps3.c.o
+[320/346] Building C object CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_ps4.c.o
+[321/346] Building C object CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_ps5.c.o
+[322/346] Building C object CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_stadia.c.o
+[323/346] Building C object CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_steam.c.o
+[324/346] Building C object CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_switch.c.o
+[325/346] Building C object CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_steamdeck.c.o
+[326/346] Building C object CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_xbox360.c.o
+[327/346] Building C object CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_wii.c.o
+[328/346] Building C object CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_xbox360w.c.o
+[329/346] Building C object CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapijoystick.c.o
+[330/346] Building C object CMakeFiles/SDL2-static.dir/src/joystick/hidapi/SDL_hidapi_xboxone.c.o
+[331/346] Building C object CMakeFiles/SDL2-static.dir/src/joystick/steam/SDL_steamcontroller.c.o
+[332/346] Building C object CMakeFiles/SDL2-static.dir/src/thread/pthread/SDL_sysmutex.c.o
+[333/346] Building C object CMakeFiles/SDL2-static.dir/src/thread/pthread/SDL_syscond.c.o
+[334/346] Building C object CMakeFiles/SDL2-static.dir/src/joystick/linux/SDL_sysjoystick.c.o
+[335/346] Building C object CMakeFiles/SDL2-static.dir/src/thread/pthread/SDL_systhread.c.o
+[336/346] Building C object CMakeFiles/SDL2-static.dir/src/thread/pthread/SDL_systls.c.o
+[337/346] Building C object CMakeFiles/SDL2-static.dir/src/thread/pthread/SDL_syssem.c.o
+[338/346] Building C object CMakeFiles/SDL2-static.dir/src/misc/unix/SDL_sysurl.c.o
+[339/346] Building C object CMakeFiles/SDL2-static.dir/src/power/linux/SDL_syspower.c.o
+[340/346] Building C object CMakeFiles/SDL2-static.dir/src/locale/unix/SDL_syslocale.c.o
+[341/346] Building C object CMakeFiles/SDL2-static.dir/src/filesystem/unix/SDL_sysfilesystem.c.o
+[342/346] Building C object CMakeFiles/SDL2-static.dir/src/timer/unix/SDL_systimer.c.o
+[343/346] Building C object CMakeFiles/SDL2-static.dir/src/sensor/dummy/SDL_dummysensor.c.o
+[344/346] Linking C static library libSDL2main.a
+[345/346] Linking C static library libSDL2.a
+[345/346] Install the project...
+-- Install configuration: ""
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/lib64/libSDL2main.a
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/lib64/libSDL2.a
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/lib64/cmake/SDL2/SDL2mainTargets.cmake
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/lib64/cmake/SDL2/SDL2mainTargets-noconfig.cmake
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/lib64/cmake/SDL2/SDL2staticTargets.cmake
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/lib64/cmake/SDL2/SDL2staticTargets-noconfig.cmake
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/lib64/cmake/SDL2/SDL2Config.cmake
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/lib64/cmake/SDL2/SDL2ConfigVersion.cmake
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/lib64/cmake/SDL2/sdlfind.cmake
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_assert.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_atomic.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_audio.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_bits.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_blendmode.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_clipboard.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_copying.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_cpuinfo.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_egl.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_endian.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_error.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_events.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_filesystem.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_gamecontroller.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_gesture.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_guid.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_haptic.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_hidapi.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_hints.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_joystick.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_keyboard.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_keycode.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_loadso.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_locale.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_log.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_main.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_messagebox.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_metal.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_misc.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_mouse.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_mutex.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_name.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_opengl.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_opengl_glext.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_opengles.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_opengles2.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_opengles2_gl2.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_opengles2_gl2ext.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_opengles2_gl2platform.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_opengles2_khrplatform.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_pixels.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_platform.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_power.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_quit.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_rect.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_render.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_rwops.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_scancode.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_sensor.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_shape.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_stdinc.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_surface.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_system.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_syswm.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_test.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_test_assert.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_test_common.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_test_compare.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_test_crc32.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_test_font.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_test_fuzzer.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_test_harness.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_test_images.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_test_log.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_test_md5.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_test_memory.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_test_random.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_thread.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_timer.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_touch.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_types.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_version.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_video.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_vulkan.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/begin_code.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/close_code.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_revision.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/include/SDL2/SDL_config.h
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/share/licenses/SDL2/LICENSE.txt
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/lib64/pkgconfig/sdl2.pc
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/bin/sdl2-config
+-- Installing: /data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/sdl2-vulkan/share/aclocal/sdl2.m4
+Traceback (most recent call last):
+  File "/home/media/.cache/splatpc/build-env/recompiler/tools/build_vulkan_dependencies.py", line 153, in <module>
+    main()
+  File "/home/media/.cache/splatpc/build-env/recompiler/tools/build_vulkan_dependencies.py", line 140, in main
+    f.result()
+  File "/usr/lib64/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib64/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/media/.cache/splatpc/build-env/recompiler/tools/build_vulkan_dependencies.py", line 87, in build_profile
+    profile_marker(name, prefix).write_text('# Audited Vulkan dependency profile 1.\n', encoding='utf-8')
+  File "/usr/lib64/python3.12/pathlib.py", line 1047, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/data/local/games/src/Splatoon.recomp/cache/build-env/build/deps/glslang-vulkan/lib/cmake/glslang/GlslangVulkanOnly.cmake'
